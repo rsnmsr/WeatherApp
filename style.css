@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+body {
+    text-align: center;
+    margin-top: 2rem;
+     background-color: black;
+    color: white; 
+}
+a:hover{
+background-color: green;
+}
+.main {
+    text-align: center;
+}
+
+.place {
+    margin-top: 2em;
+}
+
+.place h4 {
+    margin-left: 2em;
+    display: inline-block;
+}
+
+.place p {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+
+}
+
+.today {
+    margin-top: 3em;
+    margin-left: 2em;
+}
+
+#child {
+    width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.cond {
+    margin: 2em;
+}
+
+.temp a,
+p {
+    display: inline-block;
+    font-size: large;
+}
+
+/* For the below forecast */
+.forecast {
+    display: flex;
+    margin: 10px;
+}
+
+.newParent {
+    font-size: 10px;
+    width: auto;
+    height: auto;
+    margin: 2em;
+    padding: 2px;
+    background-color: rgba(129, 157, 209,0.5);
+}
+
+.newParent p {
+    margin: 5px;
+}
+
+
+/* Media query for devices less than 1000px */
+@media (max-width:1000px) {
+    .place h4 {
+        font-size: 1.5rem;
+    }
+
+    .place p {
+        font-size: 0.5rem;
+    }
+
+    .newParent {
+        margin: 25px;
+    }
+   .cond{
+       margin: 0.6rem;
+   }
+}
+
+/* Media query for devices less than 700px */
+
+@media(max-width:700px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.5rem;
+    }
+
+    .newParent {
+        margin: 20px;
+    }
+
+    .cond{
+        margin: 0.5rem;
+    }
+
+
+
+
+}
+
+@media(max-width:350px) {
+
+    .body {
+        font-size: 0.4rem;
+    }
+
+    .newParent {
+        margin: 10px;
+    }
+
+    .cond {
+        margin: 0.5rem;
+    }
+}
+
+
+/* Media query for devices greater than 1000px */
+@media(min-width:1000px) {
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    .place h4 {
+        font-size: 2.5rem;
+    }
+
+    .place p {
+        font-size: 0.5rem;
+    }
+
+    .newParent {
+        margin: 3rem;
+    }
+
+    .cond {
+        margin:0 2.5rem;
+    }
+    .row{
+        padding: 2em;
+       
+    }
+
+}

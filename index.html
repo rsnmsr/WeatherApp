@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="https://kit.fontawesome.com/60457ac6be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>The Weather App<i class="fa fa-cloud-sun-rain fa-2x"></i></h1>
+    </header>
+
+    <div class="main">
+        <div class="place">
+            <h4 id=city>City Name</h4>
+            <p id=country>Country </p>
+        </div>
+        <div>
+            <p id='time'></p>
+        </div>
+
+        <div class="today">
+            <p>Today's weather</p>
+
+
+            <div class="row">
+                <div class="cond .col .col-md-3 temp">
+                    <div>
+                        <h5>Temperature</h5>
+                        <p id="acttemp"></p>
+                        <a class="unit">°C</a>
+                    </div>
+
+                    <div>
+                        <p>Feels Like</p>
+                        <p id="feelTemp"></p>
+                        <a class="unit">°C</a>
+                    </div>
+
+                </div>
+                <div class="cond .col .col-md-3">
+                    <h5>Pressure</h5>
+                    <p id="presure"></p>
+                </div>
+                <div class="cond .col .col-md-3">
+                    <h5>Wind</h5>
+                    <p id="wind"></p>
+                </div>
+                <div class="cond .col .col-md-3">
+                    <h5>Day Time</h5>
+                    <p id="sunrise">Sunrise</p><br>
+                    <p id="sunset">Senset</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+<h5>Forecast</h5>
+    <div id="parent" class="row forecast" >
+        <div id="child" class="newParent" ></div>
+    </div>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="app.js"></script>
+</body>
+</html>
